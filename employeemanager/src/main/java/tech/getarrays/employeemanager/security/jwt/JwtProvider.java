@@ -11,6 +11,7 @@ import tech.getarrays.employeemanager.security.entity.UsuarioPrincipal;
 
 import java.util.Date;
 
+
 @Component
 public class JwtProvider {
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);

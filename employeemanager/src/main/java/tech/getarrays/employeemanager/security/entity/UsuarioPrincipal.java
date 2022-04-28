@@ -30,6 +30,7 @@ public class UsuarioPrincipal implements UserDetails {
         return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(), usuario.getPassword(), authorities);
     }
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
@@ -65,11 +66,35 @@ public class UsuarioPrincipal implements UserDetails {
         return true;
     }
 
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
     public String getNombre() {
         return nombre;
     }
 
     public String getEmail() {
         return email;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
+        this.authorities = authorities;
     }
 }

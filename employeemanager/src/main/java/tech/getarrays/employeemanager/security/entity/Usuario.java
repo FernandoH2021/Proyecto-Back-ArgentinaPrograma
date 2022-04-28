@@ -1,9 +1,7 @@
 package tech.getarrays.employeemanager.security.entity;
-
 import com.sun.istack.NotNull;
-
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 import java.util.HashSet;
 import java.util.Set;
 

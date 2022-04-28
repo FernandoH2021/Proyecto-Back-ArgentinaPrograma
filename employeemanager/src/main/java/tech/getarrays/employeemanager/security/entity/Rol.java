@@ -1,7 +1,5 @@
 package tech.getarrays.employeemanager.security.entity;
 
-import com.sun.istack.NotNull;
-
 import tech.getarrays.employeemanager.security.enums.RolNombre;
 
 import javax.persistence.*;
@@ -19,8 +17,8 @@ public class Rol {
     public Rol() {
     }
 
-    public Rol(@NotNull RolNombre rolNombre) {
-        this.rolNombre = rolNombre;
+    public Rol(@NotNull RolNombre rolUser) {
+        this.rolNombre = rolUser;
     }
 
     public int getId() {
