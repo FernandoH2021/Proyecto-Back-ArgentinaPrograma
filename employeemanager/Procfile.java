@@ -1,0 +1,3 @@
+public class Procfile {
+    web: java -Dserver.port=$PORT  -jar target/portfolio-0.0.1-SNAPSHOT.jar
+}
