@@ -10,7 +10,8 @@ import tech.getarrays.employeemanager.service.EmployeeService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
+
+@RequestMapping("employee")
 public class EmployeeResource {
     private final EmployeeService employeeService;
 
